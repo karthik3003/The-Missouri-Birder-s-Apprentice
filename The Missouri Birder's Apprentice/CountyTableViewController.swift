@@ -39,7 +39,7 @@ class CountyTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier:"county_cell", for: indexPath)
         
-        let county = county.countiesNum(indexPath.row)
+        let county = county.countiesNum[indexPath.row]
         cell.textLabel?.text = county.name
         
         

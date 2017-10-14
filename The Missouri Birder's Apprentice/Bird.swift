@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import CoreLocation
+
 class Bird: Equatable, CustomStringConvertible {
     static func ==(lhs: Bird, rhs: Bird) -> Bool {
         return true
@@ -16,11 +18,11 @@ class Bird: Equatable, CustomStringConvertible {
     
     var name:String
     var latinName:String
-    var location:String
+    var location:CLLocationCoordinate2D!
     var dateFirstSighted:Date
     var numberOfSightings:Int
  
-    init(name:String, latinName:String, location:String, dateFirstSighted:Date, numberOfSightings:Int) {
+    init(name:String, latinName:String, location:CLLocationCoordinate2D, dateFirstSighted:Date, numberOfSightings:Int) {
         self.name = name
         self.latinName = latinName
         self.location = location
