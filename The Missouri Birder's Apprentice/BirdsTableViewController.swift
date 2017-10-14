@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class BirdsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
