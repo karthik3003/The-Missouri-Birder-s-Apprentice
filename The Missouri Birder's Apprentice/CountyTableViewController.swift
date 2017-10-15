@@ -35,6 +35,7 @@ class CountyTableViewController: UITableViewController {
         return State.numCounty()
     }
     
+    
     // The usual method for populating the cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -46,6 +47,18 @@ class CountyTableViewController: UITableViewController {
         
         return cell
         
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let birdsInCounty:BirdsTableViewController = BirdsTableViewController()
+        
+        // Examine CitiesFlownTableViewController -- you will see it defines an airline property that we configure here
+        // so that by the time that TVC becomes visible, the airline's property & cities will be displayed to the user
+        
+        birdsInCounty.county = State.countyNum(indexPath.row)
+        
+        // Every UIViewController, if it is part of a UINavigationController stack, has a navigationController property that references that
+        // UINavigationController.  This is quite handy, when we want to push a new view controller
+        self.navigationController?.pushViewController(birdsInCounty, animated: true)
     }
 
 
