@@ -17,6 +17,7 @@ class CountyTableViewController: UITableViewController {
         
         tableView.register(CountyTableViewCell.self, forCellReuseIdentifier: "county_cell")
     }
+    
     override func viewWillAppear(_ animated: Bool) {
           tableView.reloadData()
     }
@@ -31,7 +32,7 @@ class CountyTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return county.numCounties()
+        return State.numCounty()
     }
     
     // The usual method for populating the cell
@@ -39,7 +40,7 @@ class CountyTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier:"county_cell", for: indexPath)
         
-        let county = county.countiesNum[indexPath.row]
+        let county = State.countyNum(indexPath.row)
         cell.textLabel?.text = county.name
         
         

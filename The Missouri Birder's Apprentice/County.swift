@@ -10,4 +10,11 @@ import Foundation
 struct County {
     var name:String
     var birds:[Bird]
+    
+    init(name:String, birds:[Bird]) {
+        self.name = name
+        self.birds = birds
+    }
+    
+    
 }
