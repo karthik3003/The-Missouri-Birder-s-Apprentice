@@ -39,14 +39,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZp-fd-opY">
-                                <rect key="frame" x="208" y="110" width="42" height="21"/>
+                                <rect key="frame" x="195" y="110" width="164" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otC-wJ-fya">
-                                <rect key="frame" x="208" y="169" width="42" height="21"/>
+                                <rect key="frame" x="195" y="169" width="164" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -60,6 +60,10 @@
                                     <action selector="incrementSightings:" destination="oCg-Rc-rXd" eventType="touchUpInside" id="WWp-Zz-UOT"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" tag="200" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tot-ft-lAZ">
+                                <rect key="frame" x="16" y="359" width="343" height="288"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ys-Il-hez">
                                 <rect key="frame" x="195" y="224" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -73,6 +77,7 @@
                     </view>
                     <connections>
                         <outlet property="dateLBL" destination="otC-wJ-fya" id="eKw-o6-baF"/>
+                        <outlet property="imageIV" destination="tot-ft-lAZ" id="9pP-id-mTK"/>
                         <outlet property="locationLBL" destination="gZp-fd-opY" id="YO5-bM-0hg"/>
                         <outlet property="sightingsTF" destination="4Ys-Il-hez" id="Ows-k7-5Gk"/>
                         <outlet property="updtSightingsBTN" destination="8rA-7V-r6W" id="5UF-6v-jT2"/>
@@ -80,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nrx-Pw-mPw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="118" y="-47"/>
+            <point key="canvasLocation" x="117.59999999999999" y="-47.226386806596707"/>
         </scene>
     </scenes>
 </document>

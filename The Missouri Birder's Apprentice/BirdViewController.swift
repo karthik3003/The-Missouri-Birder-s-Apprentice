@@ -11,7 +11,7 @@ import UIKit
 class BirdViewController: UIViewController {
     var bird:String!
     
-    let bird1 = Bird!.self
+    let bird1 = Bird()
     
     
     @IBOutlet weak var locationLBL: UILabel!
@@ -20,14 +20,25 @@ class BirdViewController: UIViewController {
     @IBOutlet weak var dateLBL: UILabel!
     
     @IBOutlet weak var updtSightingsBTN: UIButton!
+    
+    @IBOutlet weak var imageIV: UIImageView!
+    
     @IBAction func incrementSightings(_ sender: Any) {
-        
+        bird1.updateNumSightings()
+        sightingsTF.text = "\(bird1.numberOfSightings)"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = bird
-
+        imageIV.image = UIImage(named: "\(bird!).jpg")
+        
+    //    sightingsTF.text = "\(BirdsTableViewController.county.birds)"
+        locationLBL.text = "\(bird1.location!)"
+        dateLBL.text = "\(bird1.dateFirstSighted)"
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 

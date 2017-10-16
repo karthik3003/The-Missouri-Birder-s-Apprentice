@@ -30,4 +30,12 @@ class Bird: Equatable, CustomStringConvertible {
         self.numberOfSightings = numberOfSightings
         self.description = description
     }
+    
+    convenience init() {
+        self.init(name: "", latinName: "", location: CLLocationCoordinate2DMake(0.0, 0.0), dateFirstSighted: "", numberOfSightings: 0, description: "")
+    }
+    
+    func updateNumSightings(){
+        numberOfSightings = numberOfSightings + 1
+    }
 }
