@@ -12,10 +12,11 @@
 		6FBCB07F1F92CB9F009DD7BF /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBCB07E1F92CB9F009DD7BF /* State.swift */; };
 		6FBCB0811F92D01E009DD7BF /* BirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBCB0801F92D01E009DD7BF /* BirdViewController.swift */; };
 		6FBCB0831F92F0DA009DD7BF /* CountyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBCB0821F92F0DA009DD7BF /* CountyTableViewCell.swift */; };
+		CC0E3F401F9428A80062CC6A /* BirdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0E3F3F1F9428A80062CC6A /* BirdTableViewCell.swift */; };
+		CC0E3F421F942A7F0062CC6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0E3F411F942A7F0062CC6A /* Main.storyboard */; };
 		CC74D03A1F92B70E007A2D18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC74D0391F92B70E007A2D18 /* AppDelegate.swift */; };
 		CC74D03C1F92B70E007A2D18 /* CountyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC74D03B1F92B70E007A2D18 /* CountyTableViewController.swift */; };
 		CC74D03E1F92B70E007A2D18 /* BirdsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC74D03D1F92B70E007A2D18 /* BirdsTableViewController.swift */; };
-		CC74D0411F92B70E007A2D18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC74D03F1F92B70E007A2D18 /* Main.storyboard */; };
 		CC74D0431F92B70E007A2D18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC74D0421F92B70E007A2D18 /* Assets.xcassets */; };
 		CC74D0461F92B70E007A2D18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC74D0441F92B70E007A2D18 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -26,11 +27,12 @@
 		6FBCB07E1F92CB9F009DD7BF /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		6FBCB0801F92D01E009DD7BF /* BirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdViewController.swift; sourceTree = "<group>"; };
 		6FBCB0821F92F0DA009DD7BF /* CountyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountyTableViewCell.swift; sourceTree = "<group>"; };
+		CC0E3F3F1F9428A80062CC6A /* BirdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdTableViewCell.swift; sourceTree = "<group>"; };
+		CC0E3F411F942A7F0062CC6A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CC74D0361F92B70E007A2D18 /* The Missouri Birder's Apprentice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Missouri Birder's Apprentice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC74D0391F92B70E007A2D18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC74D03B1F92B70E007A2D18 /* CountyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountyTableViewController.swift; sourceTree = "<group>"; };
 		CC74D03D1F92B70E007A2D18 /* BirdsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsTableViewController.swift; sourceTree = "<group>"; };
-		CC74D0401F92B70E007A2D18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC74D0421F92B70E007A2D18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC74D0451F92B70E007A2D18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC74D0471F92B70E007A2D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,12 +71,13 @@
 				CC74D0391F92B70E007A2D18 /* AppDelegate.swift */,
 				CC74D03B1F92B70E007A2D18 /* CountyTableViewController.swift */,
 				6FBCB0821F92F0DA009DD7BF /* CountyTableViewCell.swift */,
+				CC0E3F411F942A7F0062CC6A /* Main.storyboard */,
 				6FBCB07A1F92C53C009DD7BF /* Bird.swift */,
 				CC74D03D1F92B70E007A2D18 /* BirdsTableViewController.swift */,
+				CC0E3F3F1F9428A80062CC6A /* BirdTableViewCell.swift */,
 				6FBCB0801F92D01E009DD7BF /* BirdViewController.swift */,
 				6FBCB07C1F92CA69009DD7BF /* County.swift */,
 				6FBCB07E1F92CB9F009DD7BF /* State.swift */,
-				CC74D03F1F92B70E007A2D18 /* Main.storyboard */,
 				CC74D0421F92B70E007A2D18 /* Assets.xcassets */,
 				CC74D0441F92B70E007A2D18 /* LaunchScreen.storyboard */,
 				CC74D0471F92B70E007A2D18 /* Info.plist */,
@@ -143,7 +146,7 @@
 			files = (
 				CC74D0461F92B70E007A2D18 /* LaunchScreen.storyboard in Resources */,
 				CC74D0431F92B70E007A2D18 /* Assets.xcassets in Resources */,
-				CC74D0411F92B70E007A2D18 /* Main.storyboard in Resources */,
+				CC0E3F421F942A7F0062CC6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +159,7 @@
 			files = (
 				6FBCB07D1F92CA69009DD7BF /* County.swift in Sources */,
 				6FBCB0831F92F0DA009DD7BF /* CountyTableViewCell.swift in Sources */,
+				CC0E3F401F9428A80062CC6A /* BirdTableViewCell.swift in Sources */,
 				6FBCB0811F92D01E009DD7BF /* BirdViewController.swift in Sources */,
 				CC74D03E1F92B70E007A2D18 /* BirdsTableViewController.swift in Sources */,
 				CC74D03A1F92B70E007A2D18 /* AppDelegate.swift in Sources */,
@@ -168,14 +172,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CC74D03F1F92B70E007A2D18 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC74D0401F92B70E007A2D18 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CC74D0441F92B70E007A2D18 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

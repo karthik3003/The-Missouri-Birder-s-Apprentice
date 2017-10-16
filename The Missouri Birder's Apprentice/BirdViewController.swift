@@ -9,9 +9,24 @@
 import UIKit
 
 class BirdViewController: UIViewController {
-
+    var bird:String!
+    
+    let bird1 = Bird!.self
+    
+    
+    @IBOutlet weak var locationLBL: UILabel!
+    
+    @IBOutlet weak var sightingsTF: UITextField!
+    @IBOutlet weak var dateLBL: UILabel!
+    
+    @IBOutlet weak var updtSightingsBTN: UIButton!
+    @IBAction func incrementSightings(_ sender: Any) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = bird
 
         // Do any additional setup after loading the view.
     }

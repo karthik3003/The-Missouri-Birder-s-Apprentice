@@ -34,15 +34,17 @@ class BirdsTableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "bird_cell", for: indexPath)
-        cell.textLabel?.text = county.birds[indexPath.row]
+        cell.textLabel?.text = county.birds[indexPath.row].name
+        cell.detailTextLabel?.text = county.birds[indexPath.row].latinName
+        cell.imageView?.image = UIImage(named: "\(county.birds[indexPath.row].name).jpg")
         return cell
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //let cityVC = CityViewController()
-        let cityVC = UIStoryboard(name: "NotMain", bundle: nil).instantiateViewController(withIdentifier: "bird") as! CityViewController
         
-        cityVC.city = airline.citiesFlown[indexPath.row]
-        self.navigationController?.pushViewController(cityVC, animated: true)
+        let birdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "bird_view_controller") as! BirdViewController
+        
+        birdVC.bird = county.birds[indexPath.row].name
+        self.navigationController?.pushViewController(birdVC, animated: true)
         
     }
 }
