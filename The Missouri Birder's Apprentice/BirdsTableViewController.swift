@@ -36,7 +36,7 @@ class BirdsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "bird_cell", for: indexPath)
         cell.textLabel?.text = county.birds[indexPath.row].name
         cell.detailTextLabel?.text = county.birds[indexPath.row].latinName
-        cell.imageView?.image = UIImage(named: "\(county.birds[indexPath.row].name).jpg")
+        cell.imageView?.image = UIImage(named: "\(String(describing: county.birds[indexPath.row].name!)).jpg")
         return cell
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

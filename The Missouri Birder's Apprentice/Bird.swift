@@ -16,11 +16,11 @@ class Bird: Equatable, CustomStringConvertible {
     
     var description: String
     
-    var name:String
-    var latinName:String
+    var name:String?
+    var latinName:String?
     var location:CLLocationCoordinate2D!
-    var dateFirstSighted:String
-    var numberOfSightings:Int
+    var dateFirstSighted:String?
+    var numberOfSightings = 0
  
     init(name:String, latinName:String, location:CLLocationCoordinate2D, dateFirstSighted:String, numberOfSightings:Int, description:String) {
         self.name = name

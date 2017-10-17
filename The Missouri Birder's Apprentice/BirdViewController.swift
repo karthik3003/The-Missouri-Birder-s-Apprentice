@@ -24,22 +24,35 @@ class BirdViewController: UIViewController {
     @IBOutlet weak var imageIV: UIImageView!
     
     @IBAction func incrementSightings(_ sender: Any) {
+        
         bird1.updateNumSightings()
-        sightingsTF.text = "\(bird1.numberOfSightings)"
+       
+        
+        sightingsTF.text = "\(String(describing: bird1.numberOfSightings))"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = bird
+        sightingsTF.text = "0"
         imageIV.image = UIImage(named: "\(bird!).jpg")
+        locationLBL.text = "\(bird1.location.latitude, bird1.location.longitude)"
+        let dt = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy - HH.mm.ssss"
+        let result = formatter.string(from: Date())
+        dateLBL.text = result
+        
         
     //    sightingsTF.text = "\(BirdsTableViewController.county.birds)"
-        locationLBL.text = "\(bird1.location!)"
-        dateLBL.text = "\(bird1.dateFirstSighted)"
+        
         
         
         
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        
     }
 
     override func didReceiveMemoryWarning() {
