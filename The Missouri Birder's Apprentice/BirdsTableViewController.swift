@@ -15,7 +15,7 @@ class BirdsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.navigationItem.title = county.name
+        //self.navigationItem.title = county.name
         // this will appear in the navigation bar: the user will be reminded of the airline, while perusing the list of cities flown
         
         tableView.register(BirdTableViewCell.self, forCellReuseIdentifier:"bird_cell")

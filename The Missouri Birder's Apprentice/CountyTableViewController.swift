@@ -13,7 +13,7 @@ class CountyTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.navigationItem.title = "Counties"
+        //self.navigationItem.title = "Counties"
         
         tableView.register(CountyTableViewCell.self, forCellReuseIdentifier: "county_cell")
     }
@@ -60,7 +60,26 @@ class CountyTableViewController: UITableViewController {
         // UINavigationController.  This is quite handy, when we want to push a new view controller
         self.navigationController?.pushViewController(birdsInCounty, animated: true)
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        // Now we instantiate a CitiesFlownTableViewController, where we will display a list of cities flown
+        
+        // let citiesFlownTVC:CitiesFlownTableViewController = CitiesFlownTableViewController()
+        let countyTVC = segue.destination as! CountyTableViewController
+        
+        // Examine CitiesFlownTableViewController -- you will see it defines an airline property that we configure here
+        // so that by the time that TVC becomes visible, the airline's property & cities will be displayed to the user
+        
+        countyTVC.airline = State.numCounty((tableView.indexPathForSelectedRow?.row)!)
+        
+        // Every UIViewController, if it is part of a UINavigationController stack, has a navigationController property that references that
+        // UINavigationController.  This is quite handy, when we want to push a new view controller
+        // self.navigationController?.pushViewController(citiesFlownTVC, animated: true)
+        
+        
+        
+    }
 
 }
 
