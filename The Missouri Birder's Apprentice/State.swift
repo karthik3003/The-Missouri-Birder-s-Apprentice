@@ -20,6 +20,12 @@ struct State {
     static func countyNum(_ index:Int) -> County {
         return counties[index]
     }
-    
+    static func addNewCounty(_ county:County){
+        counties.append(county)
+    }
+    static func addNewBird(_ bird:Bird){
+        Bird.append(bird)
+    }
+
     
 }
