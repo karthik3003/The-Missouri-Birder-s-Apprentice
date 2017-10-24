@@ -49,6 +49,9 @@ class BirdsTableViewController: UITableViewController {
         self.navigationController?.pushViewController(birdVC, animated: true)
         
     }
+    @IBAction func addNewBird(segue: UIStoryboardSegue){
+        
+    }
     @IBAction func cancel(unwindSegue: UIStoryboardSegue){
         
     }

@@ -82,6 +82,10 @@ class CountyTableViewController: UITableViewController {
         
         
     }
+    @IBAction func addNewCounty(segue: UIStoryboardSegue){
+    
+    }
+    
     @IBAction func cancel(unwindSegue: UIStoryboardSegue){
         
     }

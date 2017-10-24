@@ -229,6 +229,9 @@
                                 <rect key="frame" x="237" y="318" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <segue destination="4Ls-Pm-z7w" kind="unwind" unwindAction="addNewBirdWithSegue:" id="5Ad-2d-pJo"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfP-d6-tDh">
                                 <rect key="frame" x="150" y="102" width="97" height="30"/>
@@ -281,12 +284,19 @@
                                 <rect key="frame" x="259" y="166" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="Done:" destination="wCS-RJ-lAi" eventType="touchUpInside" id="J24-LJ-y6o"/>
+                                    <segue destination="DgJ-WH-TfH" kind="unwind" unwindAction="addNewCountyWithSegue:" id="jzX-kb-3FE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="ZRB-k6-xjh"/>
                     </view>
                     <navigationItem key="navigationItem" id="t11-Im-BV1"/>
+                    <connections>
+                        <outlet property="CountynameTF" destination="9Q9-Bj-fTY" id="k6z-jp-4gv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LY8-kd-X3Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="DgJ-WH-TfH" userLabel="Exit" sceneMemberID="exit"/>
