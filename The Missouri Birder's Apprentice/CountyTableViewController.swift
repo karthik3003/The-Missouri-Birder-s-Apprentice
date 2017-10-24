@@ -9,17 +9,17 @@
 import UIKit
 
 class CountyTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //self.navigationItem.title = "Counties"
         
-        tableView.register(CountyTableViewCell.self, forCellReuseIdentifier: "county_cell")
+        //tableView.register(CountyTableViewCell.self, forCellReuseIdentifier: "county_cell")
     }
     
     override func viewWillAppear(_ animated: Bool) {
-          tableView.reloadData()
+        tableView.reloadData()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -48,31 +48,33 @@ class CountyTableViewController: UITableViewController {
         return cell
         
     }
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let birdsInCounty:BirdsTableViewController = BirdsTableViewController()
-        
-        // Examine CitiesFlownTableViewController -- you will see it defines an airline property that we configure here
-        // so that by the time that TVC becomes visible, the airline's property & cities will be displayed to the user
-        
-        birdsInCounty.county = State.countyNum(indexPath.row)
-        
-        // Every UIViewController, if it is part of a UINavigationController stack, has a navigationController property that references that
-        // UINavigationController.  This is quite handy, when we want to push a new view controller
-        self.navigationController?.pushViewController(birdsInCounty, animated: true)
-    }
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let birdsInCounty:BirdsTableViewController = BirdsTableViewController()
+//        
+//        // Examine CitiesFlownTableViewController -- you will see it defines an airline property that we configure here
+//        // so that by the time that TVC becomes visible, the airline's property & cities will be displayed to the user
+//        
+//        birdsInCounty.county = State.countyNum(indexPath.row)
+//        
+//        // Every UIViewController, if it is part of a UINavigationController stack, has a navigationController property that references that
+//        // UINavigationController.  This is quite handy, when we want to push a new view controller
+//        self.navigationController?.pushViewController(birdsInCounty, animated: true)
+//    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         // Now we instantiate a CitiesFlownTableViewController, where we will display a list of cities flown
-        
-        // let citiesFlownTVC:CitiesFlownTableViewController = CitiesFlownTableViewController()
-        let countyTVC = segue.destination as! CountyTableViewController
-        
-        // Examine CitiesFlownTableViewController -- you will see it defines an airline property that we configure here
-        // so that by the time that TVC becomes visible, the airline's property & cities will be displayed to the user
-        
-        countyTVC.airline = State.numCounty((tableView.indexPathForSelectedRow?.row)!)
-        
+        if segue.identifier == "countytobird" {
+            
+            
+            
+            let birdsInCounty:BirdsTableViewController = segue.destination as! BirdsTableViewController
+            
+            // Examine CitiesFlownTableViewController -- you will see it defines an airline property that we configure here
+            // so that by the time that TVC becomes visible, the airline's property & cities will be displayed to the user
+            
+            birdsInCounty.county = State.countyNum(tableView.indexPathForSelectedRow!.row)
+        }
         // Every UIViewController, if it is part of a UINavigationController stack, has a navigationController property that references that
         // UINavigationController.  This is quite handy, when we want to push a new view controller
         // self.navigationController?.pushViewController(citiesFlownTVC, animated: true)
@@ -80,6 +82,9 @@ class CountyTableViewController: UITableViewController {
         
         
     }
-
+    @IBAction func cancel(unwindSegue: UIStoryboardSegue){
+        
+    }
+    
 }
 

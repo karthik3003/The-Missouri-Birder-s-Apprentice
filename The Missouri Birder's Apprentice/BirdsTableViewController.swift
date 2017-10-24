@@ -18,7 +18,7 @@ class BirdsTableViewController: UITableViewController {
         //self.navigationItem.title = county.name
         // this will appear in the navigation bar: the user will be reminded of the airline, while perusing the list of cities flown
         
-        tableView.register(BirdTableViewCell.self, forCellReuseIdentifier:"bird_cell")
+        //tableView.register(BirdTableViewCell.self, forCellReuseIdentifier:"bird_cell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,9 +29,11 @@ class BirdsTableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return county.birds.count
     }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "bird_cell", for: indexPath)
         cell.textLabel?.text = county.birds[indexPath.row].name
@@ -45,6 +47,9 @@ class BirdsTableViewController: UITableViewController {
         
         birdVC.bird = county.birds[indexPath.row].name
         self.navigationController?.pushViewController(birdVC, animated: true)
+        
+    }
+    @IBAction func cancel(unwindSegue: UIStoryboardSegue){
         
     }
 }

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct County {
+class County {
     var name:String
     var birds:[Bird]
     

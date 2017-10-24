@@ -19,6 +19,8 @@
 		CC74D03E1F92B70E007A2D18 /* BirdsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC74D03D1F92B70E007A2D18 /* BirdsTableViewController.swift */; };
 		CC74D0431F92B70E007A2D18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC74D0421F92B70E007A2D18 /* Assets.xcassets */; };
 		CC74D0461F92B70E007A2D18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC74D0441F92B70E007A2D18 /* LaunchScreen.storyboard */; };
+		CCABCCA91F9EC3FE0053423F /* AddNewCountyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCABCCA81F9EC3FE0053423F /* AddNewCountyViewController.swift */; };
+		CCABCCAB1F9EC4140053423F /* AddNewBirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCABCCAA1F9EC4140053423F /* AddNewBirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		CC74D0421F92B70E007A2D18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC74D0451F92B70E007A2D18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC74D0471F92B70E007A2D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCABCCA81F9EC3FE0053423F /* AddNewCountyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddNewCountyViewController.swift; path = ../AddNewCountyViewController.swift; sourceTree = "<group>"; };
+		CCABCCAA1F9EC4140053423F /* AddNewBirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddNewBirdViewController.swift; path = ../AddNewBirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				CC74D0391F92B70E007A2D18 /* AppDelegate.swift */,
+				CCABCCAA1F9EC4140053423F /* AddNewBirdViewController.swift */,
 				CC74D03B1F92B70E007A2D18 /* CountyTableViewController.swift */,
+				CCABCCA81F9EC3FE0053423F /* AddNewCountyViewController.swift */,
 				6FBCB0821F92F0DA009DD7BF /* CountyTableViewCell.swift */,
 				CC0E3F411F942A7F0062CC6A /* Main.storyboard */,
 				6FBCB07A1F92C53C009DD7BF /* Bird.swift */,
@@ -161,7 +167,9 @@
 				6FBCB0831F92F0DA009DD7BF /* CountyTableViewCell.swift in Sources */,
 				CC0E3F401F9428A80062CC6A /* BirdTableViewCell.swift in Sources */,
 				6FBCB0811F92D01E009DD7BF /* BirdViewController.swift in Sources */,
+				CCABCCA91F9EC3FE0053423F /* AddNewCountyViewController.swift in Sources */,
 				CC74D03E1F92B70E007A2D18 /* BirdsTableViewController.swift in Sources */,
+				CCABCCAB1F9EC4140053423F /* AddNewBirdViewController.swift in Sources */,
 				CC74D03A1F92B70E007A2D18 /* AppDelegate.swift in Sources */,
 				CC74D03C1F92B70E007A2D18 /* CountyTableViewController.swift in Sources */,
 				6FBCB07B1F92C53C009DD7BF /* Bird.swift in Sources */,
